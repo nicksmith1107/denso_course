@@ -1,37 +1,16 @@
-# Year Progress
+# React + Vite
 
-今年の残り日数と年間進捗を表示するシンプルな静的Webアプリです。
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 機能
+Currently, two official plugins are available:
 
-このアプリは以下の情報をリアルタイムで表示します：
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- **残り日数**: 今年が終わるまでの残り日数
-- **年間進捗**: 年間の進捗率（パーセント表示）
-- **経過日数**: 今年の経過日数と総日数
+## React Compiler
 
-すべての計算は端末のローカル時刻に基づいて行われます。表示は60秒ごとに自動更新されます。
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## ローカル実行方法
+## Expanding the ESLint configuration
 
-1. このリポジトリをクローンまたはダウンロードします
-2. `index.html` をブラウザで開きます
-
-それだけです！依存ライブラリやビルドプロセスは不要です。
-
-## 技術仕様
-
-- バニラHTML/CSS/JavaScript（依存なし）
-- バックエンド不要
-- レスポンシブデザイン対応
-- うるう年自動判定
-
-## ファイル構成
-
-```
-.
-├── index.html   # メインHTMLファイル
-├── style.css    # スタイルシート
-├── app.js       # 計算ロジック
-└── README.md    # このファイル
-```
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

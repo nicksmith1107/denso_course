@@ -1,50 +1,13 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Year Progress</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js" defer></script>
-</head>
-<body>
-  <div class="container">
-	<img src="photo.jpg" alt="Looking good!">
-    <header>
-      <h1>Year Progress</h1>
-      <p class="subtitle">今年の残り日数と進捗</p>
-    </header>
-
-    <main class="cards">
-      <div class="card">
-        <h2>残り日数</h2>
-        <p class="value" id="daysRemaining">計算中...</p>
-      </div>
-
-      <div class="card">
-        <h2>終了率</h2>
-        <p class="value" id="progressFraction">計算中...</p>
-      </div>
-    </main>
-
-    <section class="progress-bar-section">
-      <div class="progress-bar-container">
-        <div class="progress-bar-fill" id="progressBar"></div>
-      </div>
-      <p class="progress-bar-label"><span id="progressPercent">0.00</span> %</p>
-    </section>
-
-    <section class="info">
-      <p><strong>現在日時：</strong><span id="currentTime">-</span></p>
-      <p><strong>今年：</strong><span id="currentYear">-</span></p>
-      <p><strong>うるう年：</strong><span id="leapYear">-</span></p>
-      <p><strong>更新：</strong>60秒ごとに自動更新</p>
-      <p class="note">端末のローカル時刻で計算します</p>
-    </section>
-
-    <footer>
-      <p>Deployed with AWS Amplify Hosting</p>
-    </footer>
-  </div>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tetris-amplify</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
